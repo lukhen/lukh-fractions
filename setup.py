@@ -5,5 +5,5 @@ setup(
     version="0.0",
     author_email="lukasz.hen@gmail.com",
     description="adding fractions",
-    py_modules=['fractions']
+    py_modules=['lukh-fractions']
 )
