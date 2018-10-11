@@ -3,4 +3,4 @@ class Fraction:
         self._num = num
 
     def plus(self, other):
-        return 2
+        return 0
