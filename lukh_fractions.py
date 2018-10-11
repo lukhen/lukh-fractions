@@ -3,7 +3,7 @@ class LukhFraction:
         self._num = num
 
     def plus(self, other):
-        return other
+        return LukhFraction(self._num + other._num)
 
     def getInt(self):
         return self._num

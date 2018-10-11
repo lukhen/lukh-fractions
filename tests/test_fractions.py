@@ -7,3 +7,7 @@ def test_0_plus_0():
 
 def test_0_plus_NonZero():
     assert LukhFraction(0).plus(LukhFraction(1)).getInt() == 1
+
+
+def test_NonZero_plus_NonZero():
+    assert LukhFraction(1).plus(LukhFraction(2)).getInt() == 3
