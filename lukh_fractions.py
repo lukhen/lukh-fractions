@@ -4,7 +4,12 @@ class LukhFraction:
         self._den = den
 
     def plus(self, other):
-        return LukhFraction(self._num + other._num, other.getDen())
+        if self._den == other.getDen():
+            return LukhFraction(self._num + other.getNum(), self._den)
+        else:
+            res_num = self._num * other.getDen() + other.getNum() * self._den
+            res_den = self._den * other.getDen()
+            return LukhFraction(res_num, res_den)
 
     def getNum(self):
         return self._num
