@@ -5,7 +5,7 @@ source env/bin/activate
 pip install git+https://github.com/lukhen/lukh-fractions.git
 python -c "
 from lukh_fractions import LukhFraction
-assert LukhFraction(0).plus(LukhFraction(0)).getInt() == 0"
+assert LukhFraction(0).plus(LukhFraction(0)).getNum() == 0"
 pip uninstall -y Fractions-module
 deactivate
 rm -r env
